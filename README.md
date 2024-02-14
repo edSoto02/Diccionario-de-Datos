@@ -7,6 +7,10 @@
 
 ### Esta es una aplicacion cliente servidor utilizando llamadas a métodos remotos (Pyro) utilizando python.
 
+### Descripción del proyecto:
+
+El proyecto "Diccionario Cliente-Servidor con Pyro" es una aplicación cliente-servidor funcional que permite a los usuarios realizar consultas sobre el significado de palabras almacenadas en un diccionario. El servidor proporciona acceso a un diccionario que se carga desde un archivo de texto, y los clientes pueden realizar consultas sobre el significado de palabras específicas, así como agregar nuevas palabras al diccionario.
+
 - El servidor deberá estar siempre disponible y permitirá conexiones de múltiples  clientes.
 
 - El cliente envía una petición con una palabra cuyo significado será devuelto por el programa sevidor. En caso de que el servidor no encuentre la palabra, permitirá la opción de que esta palabra y su significado sea agregado al diccionario.
@@ -134,3 +138,28 @@
 ![Captura desde 2024-02-05 14-05-06](https://github.com/edSoto02/Diccionario-de-Datos/assets/106222946/b0f2843e-fc7d-4a52-8a06-913efdc46404)
 
 
+### Cómo Utilizar el Proyecto:
+
+1. Clonar el Repositorio:
+   - Clone el repositorio del proyecto desde GitHub a su máquina local utilizando el comando git clone.
+
+2. Instalar Dependencias:
+   - Asegúrese de tener Pyro instalado en su entorno de desarrollo. Puede instalarlo usando pip con el comando pip install Pyro4.
+
+3. Configurar el Servidor:
+   - Configure el servidor para que cargue el diccionario desde un archivo de texto. Asegúrese de que el archivo de diccionario tenga el formato adecuado (por ejemplo, 
+     "palabra|significado" en cada línea).
+
+4. Iniciar el Servidor:
+   - Ejecute el script del servidor (servidor.py). Esto iniciará el servidor Pyro y lo registrará en el servicio de nombres.
+
+5. Conectar y Utilizar el Cliente:
+   - Ejecute el script del cliente (cliente.py). Esto iniciará el cliente y lo conectará al servidor Pyro. Desde el cliente, podrá realizar consultas sobre el significado de palabras y 
+     agregar nuevas palabras al diccionario según sea necesario.
+
+
+
+
+<p align="center">
+   <img src="https://img.shields.io/badge/STATUS-%20COMPLETO-green">
+</p>
